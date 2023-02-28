@@ -1,0 +1,71 @@
+body {
+    background: antiquewhite;
+}
+
+.grid-layout {
+    height: 700px;
+    /* se agrega el contenedor principal */
+    display: grid;
+    /* se definine el numero de columnas, auto|%|px */
+    /* grid-template-columns: 50% 20% auto; */
+    grid-template-columns: auto auto;
+    /* se definine el numero de columnas, auto|%|px */
+    /* grid-template-rows: 100px auto; */
+    grid-template-rows: 20% 10% 60% auto;
+    /* justify-content: stretch; */
+
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    background: lightgreen;
+    /* padding: 20px; */
+    border: 1px solid black;
+}
+
+.caja {
+    /* no es necesario con grid-layout */
+    /* width: 150px;
+    height: 150px;
+    margin: 15px; */
+
+    border: 4px solid black;
+    background: lightgrey;
+    text-align: center;
+    /* line-height: 150px; */
+
+    /* float: left; */
+    padding: 20px;
+}
+
+.c1 {
+    background-color: lightblue;
+    /* para elementos hijos del grid-layout, ocupa de la linea de / hasta la linea */
+    /* grid-column: 1 / 4; */
+    /* grid-row: 1 / span 2; */
+    /* grid-area: 1 / 1 / 3 / 4; */
+    grid-column: 1 / span 2;
+}
+
+.c2 {
+    background-color: lightyellow;
+    /* para elementos hijos del grid-layout */
+    /* grid-column: 1 / 3; */
+    grid-column: 1 / span 2;
+}
+
+.c3 {
+    background-color: lightsalmon;
+    /* para elementos hijos del grid-layout */
+    /* grid-column: 3 / 4; */
+    
+}
+
+.c12 {
+    background-color: lightseagreen;
+    /* grid-column: 1 / span 3; */
+}
+
+.c5 {
+    /* grid-column: 2 / 4; */
+    grid-column: 1 / span 2;
+    background-color: lightpink;
+}
