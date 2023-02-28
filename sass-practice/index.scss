@@ -1,0 +1,35 @@
+@use 'sub-index';
+
+// variable
+$color-principal: #ccc;
+$color-letra: blue;
+
+body {
+    background: $color-principal;
+}
+
+h1 {
+    color: $color-letra ;
+}
+
+// mixins
+@mixin caja_personalizadad($fondo: white, $color: $color-letra) {
+    background-color: $fondo;
+    border: 4px solid black;
+    color: $color;
+    margin: 20px;
+
+}
+
+.caja {
+    @include caja_personalizadad()
+}
+
+.caja-secundaria {
+    @include caja_personalizadad($fondo: gray, $color: red)
+}
+
+// operadores (+, -, /, *)
+.caja, .caja-secundaria {
+    width: 400px + 100px;
+}

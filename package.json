@@ -1,0 +1,23 @@
+{
+  "name": "notes-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:practice": "sass --watch sass-practice/index.scss sass-practice/index.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftun/notes-front.git"
+  },
+  "author": "Felipe Tun <felipe.tun.cauich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftun/notes-front/issues"
+  },
+  "homepage": "https://github.com/ftun/notes-front#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
